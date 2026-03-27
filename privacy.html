@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemini Quill - 隐私权政策</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    main {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h1 {
+      text-align: center;
+      color: #1a73e8;
+      margin-bottom: 5px;
+    }
+    h2 {
+      color: #202124;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+      margin-top: 36px;
+      font-size: 1.25rem;
+    }
+    p, li {
+      font-size: 15px;
+      color: #4a4a4a;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .date {
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    strong {
+      color: #202124;
+    }
+    code {
+      background-color: #f1f3f4;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Gemini Quill 隐私权政策</h1>
+    <div class="date">最后更新日期：2026年3月27日</div>
+
+    <p>感谢您使用 Gemini Quill（以下简称“本扩展”或“我们”）。我们非常重视您的隐私，并深知小说创作者的设定、大纲和正文数据是极其宝贵的心血。</p>
+    <p>本隐私权政策旨在向您透明地解释本扩展如何处理您的数据。我们的核心原则是：<strong>您的数据完全属于您，并且只保留在您的本地设备上。</strong></p>
+
+    <section>
+      <h2>1. 我们收集什么信息？</h2>
+      <p><strong>我们不收集、不存储、也不传输您的任何个人信息或创作数据。</strong></p>
+      <p>本扩展旨在作为您浏览器中的本地辅助工具。您在侧边栏中输入的所有小说世界观、角色设定、细纲、剧情快照以及聊天记录，均通过 Chrome 浏览器的本地存储 API（<code>chrome.storage.local</code>）直接保存在您当前使用的设备上。</p>
+      <p>我们没有自建的云端服务器，也没有接入任何第三方数据统计分析服务（如 Google Analytics）。这意味着，作为开发者，我们完全无法看到、获取或使用您的任何创作内容。</p>
+    </section>
+
+    <section>
+      <h2>2. 我们为何需要特定的浏览器权限？</h2>
+      <p>为了实现本扩展的核心功能，我们在安装时会请求以下权限。这些权限的调用严格遵循“最小必要”原则，且所有操作均在本地完成：</p>
+      <ul>
+        <li><strong>storage & unlimitedStorage（存储权限）</strong>：用于将您的写作工作台数据、长期设定库和快照存档持久化保存在浏览器的本地存储中，以防止数据在页面刷新或关闭时丢失。申请无限制存储配额是为了确保大量纯文本数据不会因超出默认 5MB 限制而保存失败。</li>
+        <li><strong>tabs（标签页权限）</strong>：用于定位您当前是否打开了 Gemini (https://gemini.google.com/) 网页，以便侧边栏能够准确地与该页面进行通信。</li>
+        <li><strong>主机权限 (https://gemini.google.com/*)</strong>：本扩展需要在该域名下运行脚本，其唯一目的是代替您执行繁琐的“复制粘贴”操作：将组装好的提示词写入输入框，或者从当前页面读取您与 AI 的最新对话文本并提取到侧边栏中。本扩展绝不会在其他任何未经授权的网站上运行或读取数据。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. 数据分享与第三方</h2>
+      <p>由于我们根本不收集您的数据，因此我们也<strong>绝对不会</strong>将您的任何信息出售、交易或转移给任何第三方公司或个人。</p>
+      <p>请注意，本扩展的作用是将您的设定作为提示词发送给 Google Gemini。在此交互过程中，您发送给 Gemini 的文本将受 Google 自身隐私权政策的约束。我们建议您在使用 AI 服务时避免输入真实的个人隐私敏感信息。</p>
+    </section>
+
+    <section>
+      <h2>4. 数据的修改与删除</h2>
+      <p>您对自己的数据拥有绝对的控制权。</p>
+      <ul>
+        <li>您可以随时在扩展的侧边栏界面中修改或删除特定的设定条目和快照。</li>
+        <li>如果您想彻底清除所有数据，只需在 Chrome 浏览器中卸载 Gemini Quill 扩展，或者清除浏览器的本地扩展存储数据即可。卸载后，所有相关数据将从您的设备上被永久抹除。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. 政策的变更</h2>
+      <p>如果我们对本隐私权政策进行重大更新，我们将在此页面上发布最新版本，并更新顶部的“最后更新日期”。由于我们不收集您的联系方式，我们建议您定期查看本页面以了解任何更改。</p>
+    </section>
+
+    <section>
+      <h2>6. 联系我们</h2>
+      <p>如果您对本隐私权政策或本扩展的数据处理方式有任何疑问，或者需要报告任何问题，请通过以下方式联系我们：</p>
+      <ul>
+        <li>电子邮件：[您的邮箱，如 yourmail@example.com]</li>
+        <li>GitHub Issue：<a href="https://github.com/yourusername/gemini-quill/issues" target="_blank">[填写您的 GitHub 项目链接]</a>（如果没有开源计划，请直接删掉这一行）</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
